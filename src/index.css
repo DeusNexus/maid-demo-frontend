@@ -1,0 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  line-height: 0.5rem;
+}

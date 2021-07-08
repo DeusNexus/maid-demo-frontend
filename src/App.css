@@ -1,75 +1,28 @@
+/* APP CSS ELEMENTS */
 .App {
-  min-height: 100vh;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: lightblue;
-}
-
-.Left {
-  background-color: slateblue;
-}
-
-.Title {
-  text-align: center;
-  color: darkblue
-}
-
-.Middle {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
-  min-height: 450px;
-  min-width: 65%;
-  justify-content: space-between;
-}
-
-.Right {
-  background-color: slateblue;
-}
-
-.Info {
-  background-color: lightyellow;
-  border-radius: 8px;
+  align-items: center;
   padding: 25px;
 }
-
-.User {
-  background-color: lightsalmon;
-  padding: 25px;
-  border-radius: 8px;
-  margin-top: 15px;
-}
-
-#publickey {
-  width: 100%;
-}
-
-#account {
-  margin-top: 8px;
-  width: 100%;
-}
-
-.Dev {
-  margin-top: 15px;
-  border-radius: 8px;
+.container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
   padding: 15px;
-  background-color: gray;
-}
+  margin-bottom: 2.5rem;
+ }
 
-.Metamask {
-  margin-top: 10px;
-  background-color: lightcoral;
-  border-radius: 8px;
-  padding: 8px;
-}
+ #publickey {
+   width: 100%;
+ }
 
-#privatekey {
-  width: 100%;
-}
+ #account {
+   width: 100%
+ }
 
-#private2public {
-  color: blue;
-}
+ #privatekey {
+   width: 100%;
+ }
+

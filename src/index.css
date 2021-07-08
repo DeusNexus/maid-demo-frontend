@@ -1,8 +1,20 @@
+/*GLOBAL CSS ELEMENTS*/
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: small;
-  line-height: 0.5rem;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  word-wrap: break-word;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+li {
+  margin-bottom: 10px;
+  font-weight: 600;
 }

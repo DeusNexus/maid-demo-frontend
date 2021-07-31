@@ -1,7 +1,7 @@
 import { publicToAddress, privateToPublic } from 'ethereumjs-util';
 import * as bitcoin from 'bitcoinjs-lib';
 
-
+//Converts public key to ETH address
 export const public2address = (_publicKey) => {
     try {
       return '0x'+publicToAddress(Buffer.from(_publicKey,'hex'),true).toString('hex')
@@ -11,6 +11,7 @@ export const public2address = (_publicKey) => {
     }
 }
 
+//Converts public key to a p2pkh bitcoin address
 export const public2btc = (_publicKey) => {
     try {
       let pubkey = Buffer.from(_publicKey, 'hex')
@@ -25,6 +26,7 @@ export const public2btc = (_publicKey) => {
     }
   }
 
+//XOR's the user-provided Public Key with the service Public Key to yield the burn public key (which still need to be converted to an BTC-address!)
 export const public2xor = (_servicePubKey,_clientPubKey) => {
     try {
         //XOR service and client public keys and append "0x04"
@@ -55,6 +57,8 @@ export const public2xor = (_servicePubKey,_clientPubKey) => {
     }
 }
 
+//Used in Dev section
+//Convert ethereum private key to ethereum public key.
 export const private2public = (_privateKey) => {
     try {
       return privateToPublic(Buffer.from(_privateKey,'hex')).toString('hex')
@@ -64,6 +68,8 @@ export const private2public = (_privateKey) => {
     }
 }
 
+//Used in Dev section
+//Returns the compressed public key - NOT USED
 export const privateCompressed2public = (_publicKey) => {
     try {
       //Get last binary digit
